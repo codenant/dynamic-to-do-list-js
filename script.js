@@ -16,16 +16,11 @@ document.addEventListener('DOMContentLoaded', function(){
             // Activating the remove button
             const removeButton = document.createElement('button')
             removeButton.textContent = 'Remove';
-            removeButton.className = 'remove-btn';
+            removeButton.classList.add('remove-btn');
 
             removeButton.addEventListener('click', function() {
                 taskList.removeChild(listItem)
             })
-                
-            
-                
-            
-               
             
             listItem.appendChild(removeButton);
             taskList.appendChild(listItem);
